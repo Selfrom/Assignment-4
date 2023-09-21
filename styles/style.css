@@ -1,0 +1,22 @@
+body {
+  padding: 10px;
+  width: 960px;
+}
+
+header {
+  display: grid;
+  width: 100%;
+}
+
+header > * {
+  background-color: lightgray;
+}
+
+.logo {
+}
+
+navbar {
+}
+
+navbar ul li {
+}
