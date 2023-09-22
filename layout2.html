@@ -6,10 +6,56 @@
   <title>Layout 2</title>
   <link href="styles/style.css" rel="stylesheet" />
   <style>
-    
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 80px 1fr;
+      min-height: 720px;
+      grid-gap: 20px;
+    }
+
+    h1        {grid-column: 1/2; grid-row: 1/2; font-size: 2.7em; margin-top: 15px;}
+    h2        {grid-column: 1/2; grid-row: 2/3; font-size: 1.45em;}
+    .grid3x3  {grid-column: 1/2; grid-row: 3/4;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 8px;
+    }
+
   </style>
 </head>
 <body>
-  
+  <header>
+    <div class="logo">
+      Company Logo
+    </div>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+  </header>
+  <main>
+    <h1>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro ei.</h1>
+    <h2>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</h2>
+    <section class="grid3x3">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="copyright">
+      Copyright Notice
+    </div>
+  </footer>
 </body>
 </html>

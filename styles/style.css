@@ -1,9 +1,10 @@
 body {
   width: 960px;
   min-height: 600px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo, li, .featured-product, #product1, #product2, footer {
+.logo, li, .featured-product, #product1, #product2, footer, .item {
   background-color: silver;
 }
 
